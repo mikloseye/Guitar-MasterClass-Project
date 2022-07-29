@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href= "styles.css" rel= "stylesheet">
+    <script src="https://kit.fontawesome.com/88725fea12.js" crossorigin="anonymous"></script>
+    <script src="ad.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400;600;900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Miklosey Guitars | Services</title>
+    <script>
+        let i= 0; // starting point
+        let images= []; // images array
+        let time= 3000; // 3 second intervals
+
+        images[0]= 'images/headstock.jpg';
+        images[1]= 'images/body.jpg';
+        images[2]= 'images/body2.jpg';
+        images[3]= 'images/baritone.jpg';
+        images[4]= 'images/guitar3.jpg';
+        images[5]= 'images/neck.jpg';
+        images[6]= 'images/neck2.jpg';
+        images[7]= 'images/soundhole.jpg';
+
+        function changeImg() {
+            document.slides.src= images[i];
+
+            if(i < images.length - 1) {
+                i++;
+            } else {
+                i= 0;
+            }
+
+            setTimeout("changeImg()", time);
+        }
+
+        window.onload = changeImg;
+    </script>
+</head>
+<body>
+
+<!--NAVIGATION-->
+
+<header>
+    <div class= "container">
+        <div class= "brand">
+            <h1>MIKLOSEY&#153; GUITARS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href= "index.html">Home</a></li>
+                <li><a href= "about.html">About</a></li>
+                <li><a href= "services.html">Services</a></li>
+                <li><a href= "contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!--SERVICES-->
+
+<section class= "main">
+    <div class="container">
+        <article id="main-col">
+            <h1>Services</h1>
+              <ul id="services">
+                    <li>
+                        <h3>Consultations for Builds</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, rem!
+                            Provident, sunt nihil sapiente quidem incidunt quibusdam nisi odit 
+                            voluptatem ipsa! In quos consequatur maiores recusandae debitis et 
+                            placeat consequuntur.
+                        </p>
+                        <p>Pricing: $1,000 down-deposit. Pay rest as we go.</p>
+                    </li>
+                    <li>
+                        <h3>Maintenance and Repairs</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, rem!
+                            Provident, sunt nihil sapiente quidem incidunt quibusdam nisi odit 
+                            voluptatem ipsa! In quos consequatur maiores recusandae debitis et 
+                            placeat consequuntur.
+                        </p>
+                        <p>Pricing: $25 per hour NOT including additional parts. </p>
+                    </li>
+                    <li>
+                        <h3>Tutorials</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, rem!
+                            Provident, sunt nihil sapiente quidem incidunt quibusdam nisi odit 
+                            voluptatem ipsa! In quos consequatur maiores recusandae debitis et 
+                            placeat consequuntur.
+                        </p>
+                        <p>Pricing: $100 per month</p>
+                    </li>
+                </ul>
+                
+            </article>
+
+ <!--ASIDE-->           
+    
+    <aside id="sidebar">
+        <div class="dark">
+            <h2>Get a Quote</h2>
+            <form class="quote">
+                <div>
+                    <label>Name</label><br>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div>
+                    <label>Email Address</label><br>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div>
+                    <label>Message</label><br>
+                    <textarea placeholder="Message"></textarea>
+                    </div>
+                <div>
+                    <button class="button_1" type="submit">Send</button>
+                </div>
+    
+            </form>
+        </div>
+    
+    </aside>
+    </div>
+</section>
+
+<!--SLIDESHOW-->
+
+<section class= "slideshow">
+    <h2>Check out some of our past builds!</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, temporibus.</p>
+    <img name= "slides" width= "600" height= "700">
+    <div class= "reviews">
+        <h3>Some reviews of our builds:</h3>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odio,
+            ducimus aut nobis facilis qui nesciunt assumenda ipsum nihil error."</p>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odio,
+            ducimus aut nobis facilis qui nesciunt assumenda ipsum nihil error."</p>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odio,
+            ducimus aut nobis facilis qui nesciunt assumenda ipsum nihil error."</p>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odio,
+            ducimus aut nobis facilis qui nesciunt assumenda ipsum nihil error."</p>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odio,
+            ducimus aut nobis facilis qui nesciunt assumenda ipsum nihil error."</p>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odio,
+            ducimus aut nobis facilis qui nesciunt assumenda ipsum nihil error."</p>
+    </div>
+</section>
+
+
+
+<!--FOOTER-->
+
+<footer>
+    <div class="socials">
+        <a href="http://www.facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="http://www.twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a href="http://www.instagram.com"><i class="fab fa-instagram-square fa-2x"></i></a>
+   </div>
+   <div class="container">
+    <h1>Subscribe to my Newsletter!</h1>
+        <form>
+            <input type="email" placeholder="Enter Email...">
+            <button type="submit" class="btn2">Subscribe</button>
+        </form>
+   </div>
+    <p>Miklosey Guitars&#153 2021</p>
+</footer>
+</body>
+</html>
